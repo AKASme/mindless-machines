@@ -10,7 +10,7 @@ sleep(1)
 p.click() #opens chrome
 p.moveTo(960, 600, duration=0.75) # so that taskbar dissapears 
 p.click() #just in case
-for c in configs: # normally for c in configs; changed just so that it doesnt blow up my computer JUST YET
+for c in configs:
     dataset = d.load_dataset("Stevross/mmlu", c, split="test")
     for i in range(2, 4):
         p.moveTo(640, 1110)
